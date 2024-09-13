@@ -2,7 +2,6 @@
 
 This is descriptions for QCOD in Korean.
 본 레퍼지토리는 양자 머신러닝 기반 Fast Quantum Convolution과 객체 탐지 프레임워크를 다룹니다. 
-본 실험코드에서, 용량제한을 위하여 checkpoints, dataset, results 폴더는 삭제되어 Zip 파일 배포되었습니다.  
 
 
 ## 0. References
@@ -98,19 +97,7 @@ ${ROOT}
 └── requirements.txt
 ```
 
-## 2. Fast Quantum Convolution
-torch-quantum 모듈의 Encoder기반 외부 Encoder를 define하기 위하여 
-/lib/python3.8/site-packages/torchquantum/encoding.py의 Code 수정 필요
-
-(해당 부분 폴더 부재시, torchquantum이 들어가는 경로 확인 후 수정)
-
-QCNN2.py 파일의 GeneralEncoder_HK를 encoding.py에 옮겨줍니다.
-
-해당 과정이 복잡하다면, QCNN2.py 폴더안에서 재정의 하여도 동일한 결과 발생
-이전 공유드린 결과물을 참조하셔도 좋습니다.
-
-
-## 3. DATASET
+## 2. DATASET
 3D KITTI Dataset은[Link](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d).
 에서 다운 받을 수 있습니다.
 구성 요소는 다음과 같습니다:
