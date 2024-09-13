@@ -6,12 +6,12 @@ This is descriptions for QCOD in Korean.
 
 ## 0. References
 본 코드는 " Super Fast and Accurate 3D Object Detection based on 3D LiDAR Point Clouds"을 기반으로 Implementation 되었습니다.
-Baseline 모델에 대한 설명은 [Link](Technical_details_references.md)에서 확인할 수 있습니다. Baseline 모델을 Citation하기 위해선 다음을 참조해주시기 바랍니다.
+Baseline 모델에 대한 설명은 [Link](https://github.com/maudzung/SFA3D/blob/master/Technical_details.md)에서 확인할 수 있습니다. Baseline 모델을 Citation하기 위해선 다음을 참조해주시기 바랍니다.
 '''
 @misc{Super-Fast-Accurate-3D-Object-Detection-PyTorch,
   author =       {Nguyen Mau Dung},
   title =        {{Super-Fast-Accurate-3D-Object-Detection-PyTorch}},
-  howpublished = {\url{https://github.com/maudzung/Super-Fast-Accurate-3D-Object-Detection}},
+  howpublished = {\url{https://github.com/maudzung/SFA3D}},
   year =         {2020}
 }
 '''
