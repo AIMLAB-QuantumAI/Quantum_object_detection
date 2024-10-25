@@ -57,9 +57,9 @@ ${ROOT}
     │   └── losses.py
     ├── models/
     │   ├── fpn_resnet.py
-    │   ├── fpn_resnet_qcnn_trial.py
+    │   ├── fpn_resnet_qcnn.py
     │   ├── QCNN.py
-    │   ├── qcnn_utils_trial.py
+    │   ├── qcnn_utils.py
     │   ├── resnet.py
     │   └── model_utils.py
     └── utils/
@@ -112,49 +112,6 @@ ${ROOT}
 수정 가능합니다.
 
 
-### Train with KD
-'''
-!python KDvalue_01.py --gpu_idx 0 --mode KD_ver0_1
-'''
-
-
-### Train without KD
-
-'''
-!python train_QCNN.py --gpu_idx 0 --mode qcnn --saved_fn qrpn
-'''
-
-
-## 5. Test
-model_path에 pretrained_model 
-1) KD version: Model_block_epoch_300.pth
-2) Without KD version: Model_block_epoch_300_QCNN.pth
-
-### Test with KD
-'''
-!python KD.py --evaluate --gpu_idx 0 --mode KD_ver1 --saved_fn KD_ver1 --resume_path './model_path'
-'''
-
-
-### Test without KD
-
-'''
-!python  train_QCNN.py --evaluate  --gpu_idx 0 --pretrained_path='./model_path'
-'''
-
-## 6. Visualization (Demo)
-
-### Train with KD
-'''
-!python demo_kd.py --gpu_idx 0 --peak_thresh 0.2 --saved_fn final_demo_kd
-'''
-
-
-### Train without KD
-
-'''
-!python demo_2_sides_qcnn.py --gpu_idx 0 --peak_thresh 0.2 --saved_fn final_demo_qrpn
-'''
 
  ## REFERENCE
  
