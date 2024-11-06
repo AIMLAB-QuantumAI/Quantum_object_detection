@@ -13,7 +13,7 @@ from torchquantum.macro import C_DTYPE
 from abc import ABCMeta
 from qiskit import QuantumCircuit
 
-class QConv2d(tq.QuantumModule):
+class QConv2d(tq.QuantumModule): # 3 by 3 Quanvolution filter
     def __init__(self,in_channels = 1, out_channels = 10, kernel_size = 3, stride = 1,
                       n_wires = 9,num_shot = 256,tau = 1,padding=0,bias=None):
         # class initialization 
@@ -90,7 +90,7 @@ class QConv2d(tq.QuantumModule):
 
         return data_processed, bsz, num_pts_W, num_pts_H
 
-    def im2col(self,input_data):
+    def im2col(self,input_data): # patch processing
         N, C, H, W = input_data.shape
         out_h = (H + 2*self.padding - self.filter_size) // self.stride + 1
         out_w = (W + 2*self.padding - self.filter_size) // self.stride + 1
@@ -136,7 +136,7 @@ class QConv2d(tq.QuantumModule):
                                             
         return out_feature
 
-class QConv2d_2x2(tq.QuantumModule):
+class QConv2d_2x2(tq.QuantumModule): # 2 by 2 Quanvolution filter
     def __init__(self,in_channels = 1, out_channels = 10, kernel_size = 2, stride = 1,
                       n_wires = 4,num_shot = 256,tau = 1,padding=0,bias=None):
         # class initialization 
@@ -213,7 +213,7 @@ class QConv2d_2x2(tq.QuantumModule):
 
         return data_processed, bsz, num_pts_W, num_pts_H
 
-    def im2col(self,input_data):
+    def im2col(self,input_data): # patch processing
         N, C, H, W = input_data.shape
         out_h = (H + 2*self.padding - self.filter_size) // self.stride + 1
         out_w = (W + 2*self.padding - self.filter_size) // self.stride + 1
@@ -259,7 +259,7 @@ class QConv2d_2x2(tq.QuantumModule):
                                             
         return out_feature    
   
-#Encoding.py에 이식    
+#ADD Encoding.py
   
 class GeneralEncoder(Encoder, metaclass=ABCMeta):
     def __init__(self, input_size,func_list):
