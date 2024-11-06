@@ -111,7 +111,7 @@ The components are as follows::
  ## REFERENCE
 [1] "Object Detector for Autonomous Vehicles Based on Improved Faster RCNN": [2D 이전 버전](https://github.com/Ziruiwang409/improved-faster-rcnn/blob/main/README.md) <br/>
 [2]"Torch-quantum"[QNN Implementation](https://github.com/mit-han-lab/torchquantum) <br/>
-[3] "KITTI-WAYMO Adapter": [WAYMO데이터 활용](https://github.com/JuliaChae/Waymo-Kitti-Adapter) <br/>
+[3] "KITTI-WAYMO Adapter": [WAYMO](https://github.com/JuliaChae/Waymo-Kitti-Adapter) <br/>
 [4] CenterNet: [Objects as Points paper](https://arxiv.org/abs/1904.07850), [PyTorch Implementation](https://github.com/xingyizhou/CenterNet) <br>
 [5] RTM3D: [PyTorch Implementation](https://github.com/maudzung/RTM3D) <br>
 [6] Libra_R-CNN: [PyTorch Implementation](https://github.com/OceanPang/Libra_R-CNN)
