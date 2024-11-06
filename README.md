@@ -1,12 +1,10 @@
 # Fast Quantum Convolution For Multi-Channel Object Detection (QCOD)
-
-This is descriptions for QCOD in Korean.
-본 레퍼지토리는 양자 머신러닝 기반 Fast Quantum Convolution과 객체 탐지 프레임워크를 다룹니다. 
+This is descriptions for QCOD.
+This repository covers Quantum Convolution and Object Detection frameworks based on quantum machine learning.
 
 
 ## 0. References
-본 코드는 " Super Fast and Accurate 3D Object Detection based on 3D LiDAR Point Clouds"을 기반으로 Implementation 되었습니다.
-Baseline 모델에 대한 설명은 [Link](https://github.com/maudzung/SFA3D/blob/master/Technical_details.md)에서 확인할 수 있습니다. Baseline 모델을 Citation하기 위해선 다음을 참조해주시기 바랍니다.
+This code is implemented based on "Super Fast and Accurate 3D Object Detection based on 3D LiDAR Point Clouds". The description of the baseline model can be found at [Link](https://github.com/maudzung/SFA3D). To cite the baseline model, please refer to the following:
 '''
 @misc{Super-Fast-Accurate-3D-Object-Detection-PyTorch,
   author =       {Nguyen Mau Dung},
@@ -16,8 +14,8 @@ Baseline 모델에 대한 설명은 [Link](https://github.com/maudzung/SFA3D/blo
 }
 '''
 ## 1.  Hierarchy
-제안 알고리즘인 Fast Quantum Convolution 및 이를 활용하기 위한 QCOD를 구현하고 이를 통한 객체탐지 프레임워크를 다룹니다.
-모델 Hierarchy는 다음과 같습니다.
+We implement the proposed algorithm, Fast Quantum Convolution, and QCOD to utilize it, and cover the object detection framework through it. 
+The model hierarchy is as follows.
 ```
 ${ROOT}
 └── checkpoints/
@@ -98,9 +96,8 @@ ${ROOT}
 ```
 
 ## 2. DATASET
-3D KITTI Dataset은[Link](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d).
-에서 다운 받을 수 있습니다.
-구성 요소는 다음과 같습니다:
+The 3D KITTI Dataset can be downloaded from [Link](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d).
+The components are as follows::
 
 - Velodyne point clouds _**(29 GB)**_
 - Training labels of object data set _**(5 MB)**_
@@ -108,14 +105,10 @@ ${ROOT}
 - **Left color images** of object data set _**(12 GB)**_ (For visualization purpose only)
 
 ## 4. Training
-(주의!) Batch Size ==> 1 고정. 빠른 연산을 위하여 Quantum Conv로 들어가는 부분의 연산을 Batch로 넣어놓았습니다. 총 차원을 늘려
-수정 가능합니다.
-
+(Note!) Batch Size ==> Fixed to 1. For fast calculation, the calculations that go into Quantum Conv are put into batches. You can modify it by increasing the total dimension.
 
 
  ## REFERENCE
- 
-  
 [1] "Object Detector for Autonomous Vehicles Based on Improved Faster RCNN": [2D 이전 버전](https://github.com/Ziruiwang409/improved-faster-rcnn/blob/main/README.md) <br/>
 [2]"Torch-quantum"[QNN Implementation](https://github.com/mit-han-lab/torchquantum) <br/>
 [3] "KITTI-WAYMO Adapter": [WAYMO데이터 활용](https://github.com/JuliaChae/Waymo-Kitti-Adapter) <br/>
