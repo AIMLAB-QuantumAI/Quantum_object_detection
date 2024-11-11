@@ -104,7 +104,7 @@ The components are as follows::
 - Camera calibration matrices of object data set _**(16 MB)**_
 - **Left color images** of object data set _**(12 GB)**_ (For visualization purpose only)
 
-## 4. Training
+## 3. Training
 (Note!) Batch Size ==> Fixed to 1. For fast calculation, the calculations that go into Quantum Conv are put into batches. You can modify it by increasing the total dimension.
 
 
