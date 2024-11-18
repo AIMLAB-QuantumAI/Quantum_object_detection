@@ -1,4 +1,4 @@
-# Fast Quantum Convolution For Multi-Channel Object Detection (QCOD)
+# Quantum Convolution For Multi-Channel Object Detection (QCOD)
 This is descriptions for QCOD.
 This repository covers Quantum Convolution and Object Detection frameworks based on quantum machine learning.
 
