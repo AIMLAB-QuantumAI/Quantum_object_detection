@@ -1,7 +1,7 @@
 # Quantum Convolution For Multi-Channel Object Detection (QCOD)
 This is descriptions for QCOD.
 This repository covers Quantum Convolution and Object Detection frameworks based on quantum machine learning.
-y
+
 
 ## 0. References
 This code is implemented based on "Super Fast and Accurate 3D Object Detection based on 3D LiDAR Point Clouds". The description of the baseline model can be found at [Link](https://github.com/maudzung/SFA3D). To cite the baseline model, please refer to the following:
